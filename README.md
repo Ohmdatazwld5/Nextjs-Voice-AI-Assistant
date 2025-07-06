@@ -9,22 +9,22 @@ A voice-based AI assistant that accepts spoken input, sends it to an LLM (OpenAI
 - 📥 Download Transcripts Feature
 ## 📦 Folder Structure
 voiceaiassist/
-├── app/ # Next.js app directory
-│ ├── page.tsx # Main page with logic
-│ └── layout.tsx # Layout wrapper
+├── app/                         # Next.js app directory
+│   ├── page.tsx                 # Main page with logic
+│   └── layout.tsx               # Layout wrapper
 ├── components/
-│ ├── MicButton.tsx # Microphone UI + fallback
-│ ├── TranscriptBubble.tsx # Shows chat messages
-│ └── DownloadButton.tsx # Downloads chat transcript
+│   ├── MicButton.tsx            # Microphone UI + fallback
+│   ├── TranscriptBubble.tsx     # Shows chat messages
+│   └── DownloadButton.tsx       # Downloads chat transcript
 ├── utils/
-│ ├── useSpeechRecognition.ts # STT using browser or Whisper
-│ ├── tts.ts # ElevenLabs or Web Speech API
-│ └── askLLM.ts # Sends prompt to LLM (OpenAI, Gemini, Groq)
+│   ├── useSpeechRecognition.ts  # STT using browser or Whisper
+│   ├── tts.ts                   # ElevenLabs or Web Speech API
+│   └── askLLM.ts                # Sends prompt to LLM (OpenAI, Gemini, Groq)
 ├── styles/
-│ └── globals.css # Tailwind CSS setup
-├── .env # API keys (ElevenLabs, OpenAI, etc.)
-├── next.config.js # Next.js config
-├── tailwind.config.js # Tailwind theme setup
+│   └── globals.css              # Tailwind CSS setup
+├── .env                         # API keys (ElevenLabs, OpenAI, etc.)
+├── next.config.js               # Next.js config
+├── tailwind.config.js           # Tailwind theme setup
 ├── package.json
 └── README.md
 
